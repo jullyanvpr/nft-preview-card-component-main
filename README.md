@@ -23,8 +23,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [https://github.com/jullyanvpr/qr-code-component-main](https://github.com/jullyanvpr/qr-code-component-main)
-- Live Site URL: [https://tiny-figolla-c0f9a0.netlify.app/](https://tiny-figolla-c0f9a0.netlify.app/)
+- Solution URL: [https://github.com/jullyanvpr/nft-preview-card-component-main](https://github.com/jullyanvpr/nft-preview-card-component-main)
+- Live Site URL: [https://boisterous-pika-792b23.netlify.app/]https://boisterous-pika-792b23.netlify.app/)
 
 ## My process
 

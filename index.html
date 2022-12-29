@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
-  <title>Frontend Mentor | NFT preview card component</title>
+  <title>Second Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,19 +16,35 @@
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main">
+    <div class="background">
+      <div class="container">
+        <div class="container__image">
+          <img class="container__image__item" src="./images/image-equilibrium.jpg" alt="Image of a cube">
+        </div>
+        <div class="container__header">
+          <h2 class="container__header__item">Equilibrium #3429</h2>
+        </div>
+        <div class="container__text">
+          <p class="container__text__item">Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div class="container__ethAndDate">
+          <div class="container__ethAndDate__eth">
+            <img class="container__ethAndDate__eth__img" src="./images/icon-ethereum.svg" alt="Ethereum icon">
+            <p class="container__ethAndDate__eth__text">0.041 ETH</p>
+          </div>
+          <div class="container__ethAndDate__date">
+            <img class="container__ethAndDate__date__img" src="./images/icon-clock.svg" alt="Clock icon">
+            <p class="container__ethAndDate__date__text">3 days left</p>
+          </div>
+        </div>
+        <div class="container__line"></div>
+        <div class="container__picAndText">
+          <img class="container__picAndText__pic" src="./images/image-avatar.png" alt="Avatar picture">
+          <p class="container__picAndText__creationOf">Creation of <span class="container__picAndText__julesWyvern">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
