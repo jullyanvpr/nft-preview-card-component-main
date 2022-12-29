@@ -18,21 +18,69 @@
 
 .background {
     width: 20rem;
-    height: 75%;
+    height: 72.5%;
     background-color: #14253d;
     border-radius: 15px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0px 25px 10px 30px #0b1625;
+    box-shadow: 0px 30px 10px 20px #0b1625;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 20px;
 }
 
 .container__image {
-    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+@keyframes transicaoImagem {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .7;
+    }
+}
+
+@keyframes transicaoIcone {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container__image:before {
+    animation: transicaoImagem .3s;
+}
+
+.container__image:after {
+    animation: transicaoIcone .3s;
+}
+
+.container__image:hover:before {
+    background-color: #00fff7;
+    border-radius: 10px;
+    content:"";
+    opacity: .7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 280px;
+}
+
+.container__image:hover:after {
+    content: url(./images/icon-view.svg);
+    position: absolute;
+    left: calc(50% - (48px / 2));
+    top: calc(50% - (48px / 2));
+    width: 48px;
+    height: 48px;
 }
 
 .container__image__item {
@@ -46,6 +94,11 @@
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: .3s;
+}
+
+.container__header:hover{
+    color: #00fff7;
 }
 
 .container__text {
@@ -57,7 +110,7 @@
 
 .container__ethAndDate {
     display: flex;
-    gap: 30%;
+    justify-content: space-between;
     padding: 0 0 20px;
 }
 
@@ -76,6 +129,7 @@
 
 .container__ethAndDate__date {
     display: flex;
+    justify-content: flex-end;
     width: 40%;
 }
 
@@ -87,10 +141,10 @@
 
 .container__line {
     height: 1px;
-    width: 98.5%;
+    width: 100%;
     opacity: .3;
     background-color: #8bacda;
-    margin: 0 0 20px;
+    margin: 0 0 25px;
 }
 
 .container__picAndText {
@@ -114,4 +168,9 @@
 
 .container__picAndText__julesWyvern {
     color: white;
+    transition: .3s;
+}
+
+.container__picAndText__julesWyvern:hover {
+    color: #00fff7;
 }
