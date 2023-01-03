@@ -4,22 +4,22 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 
 ## Overview
 
 ### Screenshot
 
-![Printscreen from the application](./images/printscreen.png)
+![Printscreen from the application](./design/preview-done.png)
 
 ### Links
 
@@ -33,40 +33,30 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Keyframes
 
 ### What I learned
 
-It gave me a deeper understanding of how the parent-child concept works in HTML and CSS. For example, when working with images, the width rule needed to be applied directly to the child element instead of the parent:
+I learned to give round borders to round pictures by adding `border-radius`.
 
 ```css
-.container__qrCode__item {
-    width: 100%;    
-    border-radius: 15px;
+.container__picAndText__pic {
+    width: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
 }
 ```
 
-Also when I applied alignment rules to the parent div containing the divs that contained img and paragraph tags, they were not being properly aligned. Instead, I had to apply separate alignment rules to their immediate parent in order to achieve the desired result.
+I was having trouble with alignment, but I learned that using `space-between` is more effective for responsive design than using `gap`.
 
 ```css
-/* This served to align the divs that contained the items */
-.container {
+.container__ethAndDate {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* This served to align the items themselves within the div */
-.container__upper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1.7rem;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    color: var(--terciaryColor);
-    
+    justify-content: space-between;
+    padding: 0 0 20px;
 }
 ```
 

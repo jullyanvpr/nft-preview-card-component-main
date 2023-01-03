@@ -18,7 +18,7 @@
 
 .background {
     width: 20rem;
-    height: 72.5%;
+    height: 35rem;
     background-color: #14253d;
     border-radius: 15px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -163,14 +163,15 @@
 
 .container__picAndText__creationOf {
     color: #8bacda;
-    padding-left: 15px;
+    padding-left: 15px;    
 }
 
-.container__picAndText__julesWyvern {
+.container__picAndText__jullyanGomes {
     color: white;
     transition: .3s;
+    text-decoration: none;
 }
 
-.container__picAndText__julesWyvern:hover {
+.container__picAndText__jullyanGomes:hover {
     color: #00fff7;
 }
