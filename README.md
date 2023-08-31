@@ -37,7 +37,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### What I learned
 
-I learned to give round borders to round pictures by adding `border-radius`.
+I learned that I can use `border-radius` to create round images.
 
 ```css
 .container__picAndText__pic {
